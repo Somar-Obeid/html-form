@@ -3,67 +3,76 @@
     <head>
         <meta charset="UTF-8">
         <title>Favorite Programming Language Survey</title>
+        <link rel="stylesheet" href="/Users/somarobeid/aa-projects/html-form/layout.css">
     </head>
     <body>
         <form action="/form-handling-url" method="post">
             <fieldset>
-                <legend>Add user</legend>
+                <legend class="legend">Add user</legend>
 
-                <div>
+                <div class="firstName">
                     <label for="firstName">First name</label>
                     <input type="text" id="firstName" name="first_name">
                 </div>
 
-                <div>
+                <div class="lastName">
                     <label for="lastName">Last name</label>
                     <input type="text" id="lastName" name="last_name">
                 </div>
 
-                <div>
+                <div class="email">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email_address">
                 </div>
+                <div class="status_date">
+                    <div class="status">
+                        <label for="status">Status</label>
+                        <select id="status" name="user_status">
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
 
-                <div>
-                    <label for="status">Status</label>
-                    <select id="status" name="user_status">
-                        <option value="student">Student</option>
-                        <option value="teacher">Teacher</option>
-                        <option value="guest">Guest</option>
-                    </select>
+                    <div class="date">
+                        <label for="currentDate">Current Date</label>
+                        <input type="date">
+                    </div>
                 </div>
 
-                <div>
+
+                <div class="fpl">
                     <p>Choose your favorite programming language</p>
-                    <label for="html">HTML</label>
-                    <input type="radio" id="html">
-                    <label for="css">CSS</label>
-                    <input type="radio" id="css">
-                    <label for="javaScript">javaScript</label>
-                    <input type="radio" id="javaScript">
+
+                    <div class="languages">
+                        <label for="html">HTML</label>
+                        <input type="radio" id="html">
+                        <label for="css">CSS</label>
+                        <input type="radio" id="css">
+                        <label for="javaScript">javaScript</label>
+                        <input type="radio" id="javaScript">
+                    </div>
                 </div>
 
-                <div>
+                <div class="comments">
                     <label for="comments">Comments</label>
                     <textarea name="user_comments" id="comments"></textarea>
                 </div>
 
-                <div>
-                    <label for="currentDate">Current Date</label>
-                    <input type="date">
+
+                <div class="nltc">
+                    <div class="nl">
+                        <input type="checkbox" id="newsletter">
+                        <label for="newsletter">Sign up for newsletter</label>
+                    </div>
+
+                    <div class="t&c">
+                        <input type="checkbox" id="termsAndConditions">
+                        <label for="termsAndConditions">Agree to terms and conditions</label>
+                    </div>
                 </div>
 
-                <div>
-                    <label for="newsletter">Sign up for newsletter</label>
-                    <input type="checkbox" id="newsletter">
-                </div>
-
-                <div>
-                    <label for="termsAndConditions">Agree to terms and conditions</label>
-                    <input type="checkbox" id="termsAndConditions">
-                </div>
-
-                <div>
+                <div class="submit">
                     <button type="submit">Submit</button>
                 </div>
             </fieldset>
